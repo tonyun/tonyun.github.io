@@ -1,0 +1,46 @@
+# Site Info
+title:              "tonyun.github.io | Front end developer"
+description:        "tonyun Portofolio"
+author_name:        "tonyun." # change this to your name
+logo_url:           https://tonyun.github.io/assets/logo_wrapper.png
+
+# Site Settings
+url:                https://tonyun.github.io # main url
+baseurl:            /
+permalink:          /:title # Post permalink
+timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
+social_share_previews: true
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
+plugins:
+  - jekyll-sitemap
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
